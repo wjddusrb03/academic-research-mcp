@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 import httpx
 
-ARXIV_API_URL = "http://export.arxiv.org/api/query"
+ARXIV_API_URL = "https://export.arxiv.org/api/query"
 
 NAMESPACES = {
     "atom": "http://www.w3.org/2005/Atom",
