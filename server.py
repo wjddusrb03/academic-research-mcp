@@ -275,7 +275,7 @@ def research_topic(topic: str, count: int = 5) -> str:
                     authors += " et al."
                 sections.append(f"  {i}. **{p['title']}**")
                 sections.append(f"     {authors} ({p['published'][:10]})")
-                sections.append(f"     {p['abstract'][:150]}...")
+                sections.append(f"     {(p.get('abstract') or '')[:150]}...")
                 sections.append(f"     PDF: {p['pdf_url']}")
                 sections.append("")
         else:
